@@ -1,0 +1,283 @@
+<!-- This file contains many elements adapted from the online tutoral -->
+<!-- on Bootstrap 4 as found here: https://www.w3schools.com/bootstrap4/default.asp -->
+
+<!-- Images source: -->
+<!-- shorthair.png taken from https://www.latest-hairstyles.com/mens/short.html -->
+<!-- mediumhair.png taken from https://www.thetrendspotter.net/medium-length-hairstyles-haircuts-men/ -->
+<!-- longhair.png taken from https://www.fashionbeans.com/2017/40-of-the-best-mens-long-hairstyles/ -->
+<!-- beard.png taken from https://www.pinterest.ca/pin/421086633905853792/ -->
+<!-- mustache.png taken from https://www.menshairstylestoday.com/handlebar-mustache/ -->
+<!-- shop.png taken from https://www.shutterstock.com/search/barber+sign -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Module 4 - Lab</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Style sheet (CSS) and JavaScript scripts necessary to use Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>    
+
+    <!-- Your own additional style sheet -->
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <!-- Bootstrap has components for alerts: https://www.w3schools.com/bootstrap4/bootstrap_alerts.asp  -->
+    <!-- These can be useful for making sure someone reads something before continuing -->
+    <div class="container">
+        <div class="alert alert-danger alert-dismissible">
+            <h2>Important Notice</h2>
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+			Due to COVID-19 we are closed at this time. However, you can purchase a ticket to save you spot when our business reopens.
+			For more info, please call us at 803-758-2398 or send us an email at mensbarbershop@gmail.com.
+        </div>
+    </div>
+	
+	<!-- Medium size container, padding 3, margins 3, background dark, text is white -->
+    <!-- Should show the name of your company with an image or logo -->
+    <!-- Bootstrap has its own font for H1, H2, p, etc.  -->
+    <!-- Look in BS4 Typography https://www.w3schools.com/bootstrap4/bootstrap_typography.asp -->
+    <!-- Use your own CSS file to change those fonts if they do not correspond to your company's look -->
+    <div class="container-md p-3 my-3 border bg-dark text-white">
+        <h1>Welcome to the Mens Barber Shop!</h1>
+        <p>Best hairstyles & beards since 1973</p>
+        <div class="card bg-danger" style="width:200px">
+			<img class="card-img-top" src="shop.png" alt="shop" style="width:100%">
+			<div class="card-body">
+			</div>
+		</div>
+	</div>
+	
+	<!-- When you have messages to tell, remember that center align is not always the best choice -->
+    <div class="container-md p-3 my-3 border bg-light text-success">
+        <h3>Our History</h3>
+        <p>At Mens Barber Shop we have been cutting hair since 1973.
+		We are by far the best barber shop in the entire city. Just ask our manager.
+		On this site, you can book appointments to the various services we provide. </p>
+    </div>
+	
+	<!-- Presenting the staff with cards: https://www.w3schools.com/bootstrap4/bootstrap_cards.asp -->
+    <!-- Card columns allows multiple cards next to each other -->
+    <!-- The first card's button doesn't go anywhere, it could be a modal --> 
+    <!-- My second card limits the information seen and uses collapsible to show more -->
+    <div class="container">
+        <h2>Hair Styles</h2>
+        <div class="card-columns">
+		
+            <div class="card bg-danger" style="width:200px">
+                <img class="card-img-top" src="shorthair.png" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title">Short Hair</h4>
+                    <!-- collapsible part -->
+                </div>
+			</div> 
+        
+            <div class="card bg-danger" style="width:200px">
+                <img class="card-img-top" src="beard.png" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title">Beard Trim</h4>
+                    <!-- collapsible part -->
+				</div>
+			</div>
+    
+			<div class="card bg-danger" style="width:200px">
+                <img class="card-img-top" src="mediumhair.png" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title">Medium Hair</h4>
+                    <!-- collapsible part -->
+				</div>
+			</div>
+            
+			<div class="card bg-danger" style="width:200px">
+                <img class="card-img-top" src="mustache.png" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title">Mustache Trim</h4>
+                    <!-- collapsible part -->
+				</div>
+			</div>
+            
+            <div class="card bg-danger" style="width:200px">
+                <img class="card-img-top" src="longhair.png" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title">Long Hair</h4>
+                    <!-- collapsible part -->
+				</div>
+			</div>
+           
+		</div>
+	</div>
+	
+	<!-- Presenting the staff with cards: https://www.w3schools.com/bootstrap4/bootstrap_cards.asp -->
+    <!-- Card columns allows multiple cards next to each other -->
+    <!-- The first card's button doesn't go anywhere, it could be a modal --> 
+    <!-- My second card limits the information seen and uses collapsible to show more -->
+    <div class="container p-3">
+        <h2>Meet Our Staff</h2>
+        <div class="card-columns">
+		
+            <div class="card bg-danger" style="width:200px">
+                <img class="card-img-top" src="josh.png" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title">Josh</h4>
+                    <p class="card-text">Hair Stylist</p>
+                    <!-- collapsible part -->
+                    <a href="#profile1" class="btn btn-primary" data-toggle="collapse">About Josh</a>
+                    <div id="profile1" class="collapse p-2">
+                        <p>Josh is a 10 year hair cutting veteran who obtained a degree in hair styling in a French college.
+                        </p>
+                    </div>
+                </div>
+            </div>  
+			
+            <div class="card bg-danger" style="width:200px">
+                <img class="card-img-top" src="adam.png" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title">Adam</h4>
+                    <p class="card-text">Beard Stylist</p>
+                    <!-- collapsible part -->
+                    <a href="#profile2" class="btn btn-primary" data-toggle="collapse">About Justin</a>
+                    <div id="profile2" class="collapse p-3">
+                        <p>Adam has been styling men's beards and mustaches for 15 years.</p>
+                    </div>
+                </div>
+            </div>
+			
+        </div>
+    </div>
+	
+	<!-- Collapsible with multiple items - accordion -->
+    <!-- https://www.w3schools.com/bootstrap4/bootstrap_collapse.asp -->
+    <!-- As we want to do a vertical navigation better suited for mobile design, an accordion pattern -->
+    <!-- could work well.  You can use other patterns too.  This is just an example. -->
+    <div class="container">
+        <div class="container-md p-3 my-3 border bg-warning text-white">
+            <h1>Mens Barber Shop</h1>
+            <p>Appointments and Contact Info</p>
+        </div>
+        <div id="accordion">
+		
+            <div class="card">
+                <div class="card-header">
+                    <a class="card-link" data-toggle="collapse" href="#collapseService">Select Service</a>
+                </div>
+                <div id="collapseService" class="collapse show" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>Please select the service you would like: </p>
+                        <form>
+							<input type="radio" name="hair" value="Haircut"> $20 Haircut<br>
+							<input type="radio" name="hair" value="Hair Trim"> $15 Hair Trim<br>
+							<input type="radio" name="hair" value="Shave Beard/Mustache"> $10 Shave Beard/Mustache<br>
+							<input type="radio" name="hair" value="Trim Beard/Mustache"> $15 Trim Beard/Mustache<br>
+						</form>
+						<br>
+						<div class="buttons">
+							<button class="submit">Submit</button>
+						</div>
+                    </div>
+                </div>
+				
+				<div class="card">
+					<div class="card-header">
+						<a class="collapsed card-link" data-toggle="collapse" href="#collapseDate">Book Appointment</a>
+					</div>
+					<div id="collapseDate" class="collapse" data-parent="#accordion">
+						<div class="card-body">
+							<p>Please schedule a date:</p>
+							<!-- Bootstrap has various input components. Some examples are given here: -->
+							<!-- Component shown here: https://v4-alpha.getbootstrap.com/components/forms/#textual-inputs -->
+							<div class="form-group row">
+								<label for="dateTimeInput" class="col-2 col-form-label">Date and time</label>
+								<div class="col-10">
+									<input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="dateTimeInput">
+								</div>
+							</div>
+							<div class="buttons">
+								<button class="submit">Submit</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="card">
+					<div class="card-header">
+						<a class="collapsed card-link" data-toggle="collapse" href="#collapseClientInfo">Your Contact Infoformation</a>
+					</div>
+					<div id="collapseClientInfo" class="collapse" data-parent="#accordion">
+						<div class="card-body">
+							<p>Please enter your name, email, and phone number so we can contact you.</p>
+							<form name="User Info Questionaire" method="POST">
+							<div style="font-family:verdana">
+								<b>Contact Information:</b><br>
+								<br>
+								<textarea name="comment[body]" rows="10" cols="50" wrap="physical" id="fav_val"></textarea>
+								<br>
+							</div>
+							</form>
+							<br>
+							<div class="buttons">
+								<button class="submit">Submit</button>
+							</div>
+						</div>
+					</div>
+				</div>
+                
+				<div class="card">
+					<div class="card-header">
+						<a class="collapsed card-link" data-toggle="collapse" href="#collapseAbout">Our Contact Information</a>
+					</div>
+					<div id="collapseAbout" class="collapse" data-parent="#accordion">
+						<div class="card-body">
+							<p><b>Location: </b>1070 Barber Road, Building 4 L4C 6K8</br>
+							<b>Contact Number: </b> 803-758-2398  </br>
+							<b>Email Address: </b> mensbarbershop@gmail.com </br>
+							<b>Open Hours: </b> Everyday, 7 AM - 4 PM  
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Including a modal https://www.w3schools.com/bootstrap4/bootstrap_modal.asp -->
+    <!-- Modals are useful for additional information or questions -->
+    <!-- Here the modal is used for a little survey -->
+    <div class="container">
+        <h2>Please complete the survey below:</h2>
+        <!-- Trigger the modal with a button -->
+        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#mySurvey">Open Survey</button>
+		<!-- Modal -->
+        <div class="modal fade" id="mySurvey" role="dialog">
+            <div class="modal-dialog">  
+            <!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+					</div>
+					<div class="modal-body">
+						<div class="container">
+							<h2>Did you feel like the website is easy to use?</h2>
+							<form>
+								<input type="radio" name="option1" value="yes"> Yes</label>
+								<input type="radio" name="option2" value="no"> No</label>
+							</form>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>     
+			</div>
+		</div>    
+	</div>
+	
+	<footer>Site created by Bakhtyar Khan</footer>
+	
+</body>
+</html>
